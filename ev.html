@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Event Registration System Form</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <div class="Event-content">
+        <h1 class="heading">Event Registration System Form</h1>
+        <h2 class="small-heading">Event Details</h2>
+        <ul class="Event-details">
+            <li><strong>Event Name</strong><span>:</span>Tech summit</li>
+            <li><strong>Time</strong><span>:</span>09:00AM to 04:00PM</li>
+            <li><strong>Date</strong><span>:</span>06/07/2025</li>
+            <li><strong>Venue</strong><span>:</span>Conference hall</li>
+            <li><strong>Company Name</strong><span>:</span>ABC Software Company</li>
+        </ul> 
+        <hr>
+        <h2>Participants Details</h2>
+           <form>           
+             <label for="Name">Full Name:</label>
+             <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+             
+             <label for="email">Email Address:</label>
+             <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+             <label for="phonenumber">Phone Number:</label>
+             <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter your phone number"><br><br>
+
+             <label>Select Gender</label><br>
+             <label for="male">Male:</label>
+             <input type="radio" id="male" name="gender" value="male">
+             <label for="female">Female:</label>
+             <input type="radio" id="female" name="gender" value="female"><br><br>
+
+             <label for="occupation">Occupation:</label>
+             <select name="occupation" id="occupation">
+                <option value="professional">Professional</option>
+                <option value="student">Student</option>
+                <option value="other">Other</option>
+             </select><br>           
+            </form> 
+        <hr>
+        <h2>Skills and Interests</h2>
+            <label for="interest">Area of interest:</label>
+            <select name="interest" id="interest">
+                <option value="ai">Artificial Intelligence</option>
+                <option value="data">Data Science</option>
+                <option value="machine">Machine Learning</option>
+                <option value="webdev">Web Development</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Programming Languages</legend>
+                <label for="python">Python</label>
+                <input type="checkbox" id="python" name="python">
+                <label for="html">HTML/CSS</label>
+                <input type="checkbox" id="html" name="html">
+                <label for="js">JavaScript</label>
+                <input type="checkbox" id="js" name="js"><br>
+            </fieldset><br>
+        <hr>
+        <h2>Additional Information</h2>
+            <fieldset>
+                <legend>How did you hear about this event?</legend>
+                <label for="online">Online search</label>
+                <input type="checkbox" id="online" name="online">
+                <label for="social">Social media</label>
+                <input type="checkbox" id="social" name="social">
+                <label for="friend">Friend/College</label>
+                <input type="checkbox" id="friend" name="friend">                
+            </fieldset><br>
+
+            <label for="textareal">What are your expectations from your event?</label>
+            <textarea name="textareal" id="textareal" rows="5" cols="25"></textarea>
+
+            <input type="submit" value="Register">
+        <hr>
+        <p><input type="checkbox" required> I hereby declare that the information provided is true and accurate.I agree to the terms and conditions of this event.</p>
+    </div>
+</body>
+</html>            
+      
+      
